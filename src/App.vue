@@ -5,6 +5,7 @@ import JumboComponent from './components/JumboComponent.vue';
 import PopupCall from './components/PopupCall.vue';
 import ServicesComponent from './components/ServicesComponent.vue';
 import OrganisationsComponent from './components/OrganisationsComponent.vue';
+import ReviewComponent from './components/ReviewComponent.vue';
 
 export default {
   data() {
@@ -15,7 +16,7 @@ export default {
   methods: {
 
   },
-  components: { HeaderComponent, JumboComponent, ServicesComponent, BrandClients, PopupCall, OrganisationsComponent, }
+  components: { HeaderComponent, JumboComponent, ServicesComponent, BrandClients, PopupCall, OrganisationsComponent, ReviewComponent }
 }
 
 
@@ -30,6 +31,7 @@ export default {
     <BrandClients />
     <PopupCall />
     <OrganisationsComponent />
+    <ReviewComponent />
   </main>
 
 </template>
