@@ -1,4 +1,5 @@
 <script>
+import BrandClients from './components/BrandClients.vue';
 import HeaderComponent from './components/HeaderComponent.vue';
 import JumboComponent from './components/JumboComponent.vue';
 import ServicesComponent from './components/ServicesComponent.vue';
@@ -12,7 +13,7 @@ export default {
   methods: {
 
   },
-  components: { HeaderComponent, JumboComponent, ServicesComponent }
+  components: { HeaderComponent, JumboComponent, ServicesComponent, BrandClients }
 }
 
 
@@ -24,6 +25,7 @@ export default {
   <main>
     <JumboComponent />
     <ServicesComponent />
+    <BrandClients />
   </main>
 
 </template>

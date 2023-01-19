@@ -56,7 +56,7 @@ export default {
     h1 {
         font-size: 50px;
         font-weight: bold;
-        letter-spacing: -2px;
+        letter-spacing: -1px;
         padding: 1rem 0;
 
     }

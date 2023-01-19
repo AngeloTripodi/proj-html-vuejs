@@ -2,9 +2,13 @@
 import ButtonComponent from './ButtonComponent.vue'
 import MainImageServices from './MainImageServices.vue';
 import TextContentServices from './TextContentServices.vue';
+import { store } from '../store';
+
 export default {
     data() {
         return {
+            store,
+
             textOnButton: 'Free Quote',
 
             preTitleOne: 'Business Growth',
@@ -27,9 +31,6 @@ export default {
         };
     },
     methods: {
-        getImgPath: function (path) {
-            return new URL(`../assets/images/${path}.jpg`, import.meta.url).href;
-        }
     },
     components: {
         ButtonComponent,
@@ -43,18 +44,18 @@ export default {
 <template>
     <section class="servicesSection my_container">
         <div class="service d-flex align-items-center">
-            <MainImageServices :mainImage="getImgPath(mainImageOne)" class="imgOne" />
-            <TextContentServices :iconImg="getImgPath(iconImgOne)" :preTitle="preTitleOne" :title="titleOne"
+            <MainImageServices :mainImage="store.getImgPath(mainImageOne)" class="imgOne" />
+            <TextContentServices :iconImg="store.getImgPath(iconImgOne)" :preTitle="preTitleOne" :title="titleOne"
                 :content="contentOne" class="contentOne" />
         </div>
         <div class="service d-flex align-items-center">
-            <TextContentServices :iconImg="getImgPath(iconImgTwo)" :preTitle="preTitleTwo" :title="titleTwo"
+            <TextContentServices :iconImg="store.getImgPath(iconImgTwo)" :preTitle="preTitleTwo" :title="titleTwo"
                 :content="contentTwo" class="contentTwo" />
-            <MainImageServices :mainImage="getImgPath(mainImageTwo)" class="imgTwo" />
+            <MainImageServices :mainImage="store.getImgPath(mainImageTwo)" class="imgTwo" />
         </div>
         <div class="service d-flex align-items-center">
-            <MainImageServices :mainImage="getImgPath(mainImageThree)" class="imgThree" />
-            <TextContentServices :iconImg="getImgPath(iconImgThree)" :preTitle="preTitleThree" :title="titleThree"
+            <MainImageServices :mainImage="store.getImgPath(mainImageThree)" class="imgThree" />
+            <TextContentServices :iconImg="store.getImgPath(iconImgThree)" :preTitle="preTitleThree" :title="titleThree"
                 :content="contentThree" class="contentThree" />
         </div>
 
@@ -73,8 +74,6 @@ export default {
         padding-right: 15rem;
         margin-left: 3rem;
     }
-
-    .imgTwo {}
 
     .imgOne,
     .imgThree {
