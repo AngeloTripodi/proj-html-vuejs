@@ -117,14 +117,20 @@ export default {
 
     }
 
-    .customOrange {
-        color: $main-orange;
+    .phoneCta {
+        font-weight: bold;
+
+        .customOrange {
+            color: $main-orange;
+
+        }
     }
 
-    button {
+
+
+    .button {
         background-color: $lite-orange;
         color: $main-orange;
-
     }
 }
 </style>

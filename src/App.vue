@@ -1,5 +1,6 @@
 <script>
 import HeaderComponent from './components/HeaderComponent.vue';
+import JumboComponent from './components/JumboComponent.vue';
 
 export default {
   data() {
@@ -10,7 +11,7 @@ export default {
   methods: {
 
   },
-  components: { HeaderComponent }
+  components: { HeaderComponent, JumboComponent }
 }
 
 
@@ -19,6 +20,9 @@ export default {
 
 <template>
   <HeaderComponent />
+  <main>
+    <JumboComponent />
+  </main>
 
 </template>
 
