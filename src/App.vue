@@ -1,6 +1,7 @@
 <script>
 import HeaderComponent from './components/HeaderComponent.vue';
 import JumboComponent from './components/JumboComponent.vue';
+import ServicesComponent from './components/ServicesComponent.vue';
 
 export default {
   data() {
@@ -11,7 +12,7 @@ export default {
   methods: {
 
   },
-  components: { HeaderComponent, JumboComponent }
+  components: { HeaderComponent, JumboComponent, ServicesComponent }
 }
 
 
@@ -22,6 +23,7 @@ export default {
   <HeaderComponent />
   <main>
     <JumboComponent />
+    <ServicesComponent />
   </main>
 
 </template>
