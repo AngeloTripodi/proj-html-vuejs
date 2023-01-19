@@ -1,5 +1,4 @@
 <script>
-import ButtonComponent from './ButtonComponent.vue'
 import MainImageServices from './MainImageServices.vue';
 import TextContentServices from './TextContentServices.vue';
 import { store } from '../store';
@@ -8,8 +7,6 @@ export default {
     data() {
         return {
             store,
-
-            textOnButton: 'Free Quote',
 
             preTitleOne: 'Business Growth',
             iconImgOne: 'blueLogo',
@@ -33,7 +30,6 @@ export default {
     methods: {
     },
     components: {
-        ButtonComponent,
         TextContentServices,
         MainImageServices
     }
