@@ -1,5 +1,5 @@
 <script>
-
+import ButtonComponent from './ButtonComponent.vue'
 export default {
     data() {
         return {
@@ -35,12 +35,17 @@ export default {
                     chevron: false,
                 },
 
-            ]
+            ],
+
+            textOnButton: "Free Quote",
         };
     },
     methods: {
 
     },
+    components: {
+        ButtonComponent,
+    }
 
 }
 </script>
@@ -52,14 +57,19 @@ export default {
                 <img src="../assets/images/avada-marketing-logo-2x.png" alt="Avada Marketing Logo">
             </div>
             <nav class="navSection">
-                <ul>
+                <ul class=" d-flex align-items-center">
                     <li v-for="navElement in navList" :class="(navElement.isActive) ? 'active' : ''">
-                        {{ navElement.title }}
+                        {{ navElement.title }} <font-awesome-icon class=" ps-2 chevron"
+                            :class="(navElement.chevron != true) ? 'd-none' : ''" icon="fa-solid fa-chevron-down" />
                     </li>
                 </ul>
             </nav>
-            <div class="phoneCta">
-
+            <div class="phoneCta d-flex align-items-center">
+                <font-awesome-icon icon="fa-solid fa-phone" class="customOrange" />
+                <p class=" ps-3">(555) 802-1234</p>
+            </div>
+            <div>
+                <ButtonComponent class="button" :buttonText="textOnButton" />
             </div>
         </div>
     </header>
@@ -79,8 +89,8 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 
 
     .logoSection img {
@@ -89,18 +99,32 @@ export default {
 
     ul {
         list-style-type: none;
-        display: flex;
-        align-items: center;
+        padding-left: 0px !important;
+
+        .chevron {
+            font-size: 12px;
+        }
+
+        li {
+            padding: .5rem .5rem;
+            margin: 0 .5rem;
+
+            &:hover {
+                color: $main-orange;
+            }
+        }
+
+
     }
 
-    li {
-        padding: 0 .5rem;
-        margin: 0 .5rem;
-        padding-bottom: .5rem;
-    }
-
-    li:hover {
+    .customOrange {
         color: $main-orange;
+    }
+
+    button {
+        background-color: $lite-orange;
+        color: $main-orange;
+
     }
 }
 </style>
