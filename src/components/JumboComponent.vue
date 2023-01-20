@@ -19,6 +19,7 @@ export default {
 </script>
 
 <template>
+
     <section class="myJumbo">
         <div class="my_container d-flex justify-content-between">
             <div class="infoSection">
@@ -54,6 +55,7 @@ export default {
     color: $main-white;
     padding-top: 8rem;
 
+
     .infoSection {
         padding-right: 5rem;
 
@@ -81,6 +83,13 @@ button {
     border-radius: 10px;
     padding: 1rem 2.5rem;
     font-weight: bold;
+
+    &:hover {
+        background-color: #ffffff00;
+        color: $main-white ;
+        border: 2px solid $main-white;
+
+    }
 }
 
 .arrowIcon {
