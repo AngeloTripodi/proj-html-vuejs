@@ -79,6 +79,10 @@ export default {
         padding: 1rem 2.5rem;
         margin-right: 3rem;
         font-weight: bold;
+
+        &:hover {
+            background-color: #f76210;
+        }
     }
 }
 </style>

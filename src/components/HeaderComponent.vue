@@ -131,6 +131,10 @@ export default {
     .button {
         background-color: $lite-orange;
         color: $main-orange;
+
+        &:hover {
+            background-color: #f76210;
+        }
     }
 }
 </style>
