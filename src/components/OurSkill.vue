@@ -67,7 +67,7 @@ export default {
 .ourSkill {
 
     margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
 
     .strenghtCol {
         flex-basis: 60%;

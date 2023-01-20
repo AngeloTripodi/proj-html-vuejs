@@ -8,6 +8,7 @@ import OrganisationsComponent from './components/OrganisationsComponent.vue';
 import ReviewComponent from './components/ReviewComponent.vue';
 import MarketingResources from './components/MarketingResources.vue';
 import WhyUsComponent from './components/WhyUsComponent.vue';
+import ContactUsComponent from './components/ContactUsComponent.vue';
 
 export default {
   data() {
@@ -18,7 +19,7 @@ export default {
   methods: {
 
   },
-  components: { HeaderComponent, JumboComponent, ServicesComponent, BrandClients, PopupCall, OrganisationsComponent, ReviewComponent, MarketingResources, WhyUsComponent }
+  components: { HeaderComponent, JumboComponent, ServicesComponent, BrandClients, PopupCall, OrganisationsComponent, ReviewComponent, MarketingResources, WhyUsComponent, ContactUsComponent }
 }
 
 
@@ -36,6 +37,7 @@ export default {
     <WhyUsComponent />
     <ReviewComponent />
     <MarketingResources />
+    <ContactUsComponent />
 
   </main>
 
