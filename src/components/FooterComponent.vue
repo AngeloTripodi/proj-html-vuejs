@@ -84,7 +84,6 @@ export default {
                         <font-awesome-icon icon="fa-brands fa-youtube" class="icon" />
                         <font-awesome-icon icon="fa-brands fa-linkedin" class="icon" />
                         <font-awesome-icon icon="fa-brands fa-tiktok" class="icon" />
-
                     </div>
                 </div>
 
@@ -112,6 +111,21 @@ export default {
 
             <div class="creditsSection">
 
+                <ul class="d-flex justify-content-between credits">
+                    <li>
+                        <p> &#169; 2020 &#8226; Avada Consultant &#8226; Powered by Angelo Tripodi</p>
+                    </li>
+                    <li class="secondLiCredits">
+                        <p> Call Us (555)802-1234</p>
+                    </li>
+                    <li>
+                        <p> &nbsp; </p>
+                    </li>
+                    <li>
+                        <p class="customElement"> Info@yourcompany.com</p>
+                    </li>
+                </ul>
+
             </div>
         </div>
     </footer>
@@ -124,8 +138,8 @@ export default {
 
     padding: 8rem 8rem 8rem 0rem;
 
-    .logoSection img {
-        width: 240px;
+    .social {
+        width: 400px;
     }
 
     .socialContainer {
@@ -153,6 +167,11 @@ export default {
         .chevron {
             font-size: 12px;
         }
+    }
+
+    .navSection {
+
+        margin-bottom: 6rem;
 
         li {
             padding: .5rem .5rem;
@@ -168,9 +187,11 @@ export default {
             }
         }
 
-
     }
 
+    .secondLiCredits {
+        margin-left: -3.5rem;
+    }
 }
 </style>
 
