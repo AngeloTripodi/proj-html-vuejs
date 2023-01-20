@@ -1,4 +1,5 @@
 <script>
+import OurAwards from './OurAwards.vue';
 import OurSkill from './OurSkill.vue';
 import WorkWithUsComponent from './WorkWithUsComponent.vue';
 
@@ -14,7 +15,8 @@ export default {
 
     components: {
         WorkWithUsComponent,
-        OurSkill
+        OurSkill,
+        OurAwards
     }
 
 
@@ -27,6 +29,7 @@ export default {
         <div class="my_container">
             <WorkWithUsComponent />
             <OurSkill />
+            <OurAwards />
         </div>
 
     </section>
