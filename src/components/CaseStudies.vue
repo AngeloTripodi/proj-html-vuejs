@@ -25,7 +25,7 @@ export default {
 
     <section class="my_container text-center">
         <div class="caseCard">
-            <img :src="store.getImgPath(send.img)" :alt="send.img" class="img-fluid w-40">
+            <img :src="store.getImgPath(send.img)" :alt="send.img" class="img-fluid w-90">
             <div class="caseText">
                 <h2> {{ send.title }}</h2>
                 <hr style="border-top: dashed 1.5px; color: lightgray;" />
@@ -53,7 +53,7 @@ h1 {
 
 }
 
-.w-40 {
+.w-90 {
     width: 90%;
 }
 </style>
