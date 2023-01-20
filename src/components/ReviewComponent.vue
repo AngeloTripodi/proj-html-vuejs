@@ -53,6 +53,7 @@ export default {
 
 .my_container {
     margin-bottom: 7rem;
+    margin-top: 7rem;
     padding: 0 5rem;
 
     .imgContent {
