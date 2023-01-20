@@ -78,6 +78,15 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
 .active {
     color: $main-orange;
     border-bottom: 2px solid $main-orange;

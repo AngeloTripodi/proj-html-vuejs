@@ -48,4 +48,8 @@ export default {
 @use './styles/general.scss' as *;
 @use './styles/partials/variables' as *;
 @use 'bootstrap/scss/bootstrap.scss' as *;
+
+main {
+  padding-top: 104px;
+}
 </style>
