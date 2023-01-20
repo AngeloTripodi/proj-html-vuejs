@@ -51,7 +51,7 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     height: 66vh;
-    color: white;
+    color: $main-white;
     padding-top: 8rem;
 
     .infoSection {

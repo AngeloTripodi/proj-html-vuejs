@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-    <section class="myJumbo">
+    <section class="myBg">
         <div class="my_container d-flex justify-content-between align-items-center">
             <div class="infoSection">
                 <h1>
@@ -53,9 +53,9 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
-.myJumbo {
-    background-color: black;
-    color: white;
+.myBg {
+    background-color: $title-black;
+    color: $main-white;
     padding: 8rem 0;
 
     .infoSection {
@@ -93,14 +93,5 @@ export default {
 
     }
 
-}
-
-button {
-    background-color: $main-white;
-    color: $title-black;
-    border: none;
-    border-radius: 10px;
-    padding: 1rem 2.5rem;
-    font-weight: bold;
 }
 </style>
